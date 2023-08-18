@@ -28,6 +28,11 @@ body {
     justify-content: space-between;
 }
 
+.Flex3 {
+    display: flex;
+    flex-direction: column;
+}
+
 .Botao {
     text-decoration: none;
     color: #fff;
@@ -143,6 +148,25 @@ main h1 {
     margin-right: 10px;
 }
 
+/* One page*/
+#onepage {
+    padding: 50px 10px;
+}
+
+#onepageh2{
+    margin-bottom: 10px;
+}
+
+#onepage p{
+    margin-bottom: 25px;
+}
+
+#video iframe{
+    width: 340px;
+    height: 191px;
+    border: 0;
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>*/
 @media (min-width: 576px){
     /*Layout*/
@@ -154,6 +178,14 @@ main h1 {
        text-shadow: #000 0.05em 0.05em 0.05em; 
     }
 }
+
+/*Onepage*/
+
+#video iframe{
+    width: 560px;
+    height: 315px;
+}
+
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
     /*Layout*/
@@ -239,4 +271,10 @@ nav ul li a:hover {
 #destaqueSobre img {
     border-radius: 50%;
     margin-right: 50px;
+}
+
+/*One page*/
+.Flex3 {
+    flex-direction: row;
+    align-items: center;
 }
